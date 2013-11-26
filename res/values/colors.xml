@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red">#900</color>
+    <color name="green">#090</color>
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+    <color name="grayyw">#969696</color>
+	<color name="blue" >#0e1ab7</color>
+	<color name="gray">#f7f7f7</color>
+	<color name="Purple">#73058e</color>
+	<color name="touming">#00000000</color>
+	<color name="divider_color">#EDEDED</color>
+    <drawable name="white">#FFFFFFFF</drawable> 
+    <drawable name="darkgray">#DEDEDE</drawable> 
+    <drawable name="red">#EE0000</drawable> 
+    <drawable name="gray">#575757</drawable> 
+    <drawable name="blue">#1874CD</drawable> 
+    <drawable name="sousuo_textdate">#8B8378</drawable> 
+    <drawable name="divider_color">#EDEDED</drawable>
+</resources>

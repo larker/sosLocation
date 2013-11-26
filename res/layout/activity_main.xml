@@ -1,0 +1,172 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_world"
+            android:textColor="#0f0f0f"
+            android:textSize="16sp"/>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/sosPhoneNumTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue"
+                android:paddingRight="10dip"
+                android:text="@string/sosPhoneNum" />
+            <TextView
+                android:id="@+id/sosPhoneNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/sosPhoneNumTitle"
+                android:textColor="@color/red"
+                android:paddingLeft="10dip"
+                android:singleLine="true"
+                android:linksClickable="true"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/sosLongitudeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sosPhoneNumTitle"
+                android:text="@string/sosLongitude" />
+            <TextView
+                android:id="@+id/sosLongitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_below="@id/sosPhoneNum"
+                  android:layout_alignLeft="@+id/sosPhoneNum"
+                 android:textColor="@color/green"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/sosLatitudeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sosLongitudeTitle"
+                android:text="@string/sosLatitude" />
+            <TextView
+                android:id="@+id/sosLatitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_alignLeft="@+id/sosLongitude"
+                 android:layout_below="@id/sosLongitude"
+                 android:textColor="@color/blue"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/sosIpTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sosLatitudeTitle"
+                android:text="@string/sosIp" />
+            <TextView
+                android:id="@+id/sosIp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/sosLatitude"
+                android:layout_below="@id/sosLatitude"
+                android:textColor="@color/blue"
+                android:text="" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/edt1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="加速度" />
+
+        <TextView
+            android:id="@+id/edt2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="磁场" />
+
+        <TextView
+            android:id="@+id/edt3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="定位" />
+
+        <TextView
+            android:id="@+id/edt4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="陀螺仪" />
+
+        <TextView
+            android:id="@+id/edt5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="光线" />
+
+        <TextView
+            android:id="@+id/edt6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="压力" />
+
+        <TextView
+            android:id="@+id/edt7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="温度" />
+
+        <TextView
+            android:id="@+id/edt8"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="距离" />
+
+        <TextView
+            android:id="@+id/edt9"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="重力" />
+
+        <TextView
+            android:id="@+id/edt10"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="线性加速度" />
+
+        <TextView
+            android:id="@+id/edt11"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="旋转矢量" />
+
+        <TextView
+            android:id="@+id/edt12"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="defalut" />
+        
+        <Button 
+            android:id="@+id/refresh"
+            android:text="刷新"
+            android:layout_height="wrap_content"
+            android:layout_width="200dip"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
